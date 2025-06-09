@@ -1,2 +1,2 @@
 # WordleExtreme
-"Wordle... but harder."
+"Wordle... but harder. :D"
