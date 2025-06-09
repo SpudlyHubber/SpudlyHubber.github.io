@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Extreme</title>
+    <link href="https://db.onlinewebfonts.com/c/4789cf828c01b22acb9b2b73ee91aa0d?family=NYTKarnakCondensed" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="wordle.css">
+</head>
+<body>
+    <div class="title">Wordle<p class="bold">Extreme</p></div>
+    <div class="instructions plaintext"><div class="centred big-text">Welcome To Wordle Extreme!</div>
+<p>This is Wordle Extreme - a harder version of Wordle where you're told how many
+    letters are right in the right places and right in the wrong places - just not which ones!
+    You're going to have to make assumptions that may or may not be true.
+    You've got an unlimited number of guesses - but potential points decrease with every guess, 
+    so try and get the answer in as little guesses as possible. Points contribute to your total score
+    and determine your rank.
+    Happy wordling!
+</p>
+</div>
+    <div class="flex">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+    </div>
+    <div class="centred">
+        <input class="btn green" id="btn" type="button" value="Submit"/></div>
+    </div>
+    <div class="centred">
+        <input class="btn" id="reset" type="button" value="Reset Word"/>
+    </div>
+    <div class="centred text" id="text"></div>
+    <div class="big-text font centred" id="potentialpoints"></div>
+    <div class="playerscore plaintext" id="playerscore"><div class="text centred">Player Score</div><div class="very-big-text font centred" id="alltimepoints"></div><div class="text centred" id="level"></div></div>
+        <script src="wordle.js"></script>
+    <div class="centred text">(P.S. This game is not made by New York Times. It's just a 'fangame' and one of
+        the many variants of Wordle.)
+    </div>
+</html>
