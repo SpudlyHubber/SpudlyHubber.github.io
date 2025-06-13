@@ -55,8 +55,8 @@ function clear() {
         box.innerHTML = "";
     });
 }
-btn.onclick = function() {
-    if(n == 5 && gottenWord == false) {
+function submit() {
+        if(n == 5 && gottenWord == false) {
         guesses = {
             cw: 0,
             cr: 0,
@@ -95,6 +95,9 @@ btn.onclick = function() {
         potentialpoints.innerHTML = "Possible points: " + ppoints;
         alltimepoints.innerHTML = localStorage.wordlePoints;
     }
+}
+btn.onclick = function() {
+    submit();
 };
 reset.onclick = function() {
     if(gottenWord === true) {
@@ -127,6 +130,9 @@ addEventListener("keydown", e => {
             catch {
             }
         }
+        else if(e.key === "Enter") {
+            submit();
+        }
     }
 });
 addEventListener("keyup", e => {
@@ -136,25 +142,37 @@ function between(x, y, z) {
     return x >= y && x <= z;
 }
 function loop() {
+    playerscore.style.color = "black";
     if(between(parseInt(localStorage.wordlePoints), 0, 200)) {
-        level.innerHTML = "Beginner";
-        playerscore.style.backgroundColor = "#D1FFFA";
+        level.innerHTML = "1 - Beginner";
+        playerscore.style.background = "#D1FFFA";
     }
     if(between(parseInt(localStorage.wordlePoints), 200, 400)) {
-        level.innerHTML = "Novice";
-        playerscore.style.backgroundColor = "#FED6D6";
+        level.innerHTML = "2 - Novice";
+        playerscore.style.background = "#FED6D6";
     }
     if(between(parseInt(localStorage.wordlePoints), 400, 600)) {
-        level.innerHTML = "Intermediate";
-        playerscore.style.backgroundColor = "#D9FED6";
+        level.innerHTML = "3 - Intermediate";
+        playerscore.style.background = "#D9FED6";
     }
     if(between(parseInt(localStorage.wordlePoints), 600, 800)) {
-        level.innerHTML = "Expert";
-        playerscore.style.backgroundColor = "#0F23FF";
+        level.innerHTML = "4 - Expert";
+        playerscore.style.background = "#0F23FF";
     }
-    if(parseInt(localStorage.wordlePoints) > 800) {
-        level.innerHTML = "Grandmaster";
-        playerscore.style.backgroundColor = "#DCB30F";
+    if(between(parseInt(localStorage.wordlePoints), 800, 1100)) {
+        level.innerHTML = "5 - Grandmaster";
+        playerscore.style.background = "#DCB30F";
+    }
+    if(between(parseInt(localStorage.wordlePoints), 800, 1500)) {
+        level.innerHTML = "6 - Super Grandmaster";
+        playerscore.style.background = "#F0B502";
+    }
+    if(localStorage.wordlePoints > 1500) {
+        level.innerHTML = "7 - Rex Totius Wordilae";
+        playerscore.style.background = "#000 url(RANK-7.jpg)";
+        playerscore.style.backgroundRepeat = "no-repeat";
+        playerscore.style.backgroundPosition = "center";
+        playerscore.style.color = "white";
     }
 
     btn.style.cursor = "pointer";
