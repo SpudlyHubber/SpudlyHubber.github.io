@@ -6,6 +6,7 @@ var ppoints = 20;
 var gottenWord = false;
 var btn = document.getElementById("btn");
 var reset = document.getElementById("reset");
+var wordlepoints = localStorage.wordlePoints;
 var wordchoices = ["which", "there", "their", "about", "would", "these", "other", "words", "could", "write",
 "first", "water", "after", "where", "right", "think", "three", "years", "place", "sound", "great",
 "again", "still", "every", "small", "found", "those", "never", "under", "might", "while", "house",
@@ -94,6 +95,7 @@ function submit() {
         clear();
         potentialpoints.innerHTML = "Possible points: " + ppoints;
         alltimepoints.innerHTML = localStorage.wordlePoints;
+        wordlepoints = localStorage.wordlePoints;
     }
 }
 btn.onclick = function() {
@@ -163,7 +165,7 @@ function loop() {
         level.innerHTML = "5 - Grandmaster";
         playerscore.style.background = "#DCB30F";
     }
-    if(between(parseInt(localStorage.wordlePoints), 800, 1500)) {
+    if(between(parseInt(localStorage.wordlePoints), 1100, 1500)) {
         level.innerHTML = "6 - Super Grandmaster";
         playerscore.style.background = "#F0B502";
     }
@@ -185,6 +187,9 @@ function loop() {
         reset.style.backgroundColor = "#bbb";
     }
     alltimepoints.innerHTML = localStorage.wordlePoints;
+    if(wordlepoints !== localStorage.wordlePoints) {
+        localStorage.wordlePoints = wordlepoints;
+    }
     requestAnimationFrame(loop);
 }
 loop();
