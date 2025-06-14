@@ -1,3 +1,4 @@
+addEventListener("DOMContentLoaded", function() {
 // variables
 if(localStorage.wordlePoints === undefined) {
     localStorage.wordlePoints = 0;
@@ -193,3 +194,4 @@ function loop() {
     requestAnimationFrame(loop);
 }
 loop();
+});
