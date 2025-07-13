@@ -1,5 +1,4 @@
-let w = window.open("https://www.google.com/");
-let n = 0;
+let w = window.open();
 function loop() {
     w.location.reload();
     requestAnimationFrame(loop);
