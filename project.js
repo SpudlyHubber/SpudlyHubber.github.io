@@ -1,4 +1,4 @@
-let w = window.open("about:blank");
+let w = open("about:blank");
 function loop() {
     w.location.reload();
     requestAnimationFrame(loop);
