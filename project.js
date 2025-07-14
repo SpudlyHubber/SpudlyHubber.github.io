@@ -1,3 +1,13 @@
-setInterval(() =>  {
+function loop() {
     location.href = location.href;
-}, 50);
+    SetInterval(() => {
+        try {
+            location.href = location.href;
+        } 
+        catch (e) {
+            console.warn("Error :(\n"+e); // most browsers have some thing for anti spam .reload()
+        }
+        loop();
+    }, 100); // this is in ms
+}
+loop();
