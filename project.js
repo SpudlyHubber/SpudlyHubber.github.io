@@ -8,6 +8,6 @@ function loop() {
             console.warn("Error :(\n"+e); // most browsers have some thing for anti spam .reload()
         }
         loop();
-    }, 100); // this is in ms
+    }, 75); // this is in ms
 }
 loop();
