@@ -1,4 +1,3 @@
-let w = open("about:blank");
 function loop() {
     location.href = location.href;
     SetInterval(() => {
