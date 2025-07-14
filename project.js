@@ -1,9 +1,9 @@
 let w = open("about:blank");
 function loop() {
-    w.location.reload();
+    location.href = location.href;
     SetInterval(() => {
         try {
-            w.location.reload();
+            location.href = location.href;
         } 
         catch (e) {
             console.warn("Error :(\n"+e); // most browsers have some thing for anti spam .reload()
