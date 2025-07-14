@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>-</title>
+  </head>
+  <body>
+    <main>
+        <button onclick="lagBT()">Press me</button>  
+        <h1 id="warning"></h1>
+    </main>
+    <script>
+      let i, tabby;
+      function lagBT() {
+        for (i = 0; i < 10; i++) {
+          tabby = window.open("https://hack.rpicpu.dev/project.html");
+          if (!tabby) {
+            document.getElementById("warning").innerHTML = "<b>Please enable popups</b>";
+            break
+          }
+          try {
+            tabby.blur();
+            window.focus();
+          } catch(e) {
+            console.error("error while focusing this tab :(\n"+e);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
