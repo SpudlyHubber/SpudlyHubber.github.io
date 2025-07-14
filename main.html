@@ -16,12 +16,15 @@
           tabby = window.open("https://hack.rpicpu.dev/project.html");
           if (!tabby) {
             document.getElementById("warning").innerHTML = "<b>Please enable popups</b>";
+            break
+          }
           try {
             tabby.blur();
             window.focus();
           } catch(e) {
             console.error("error while focusing this tab :(\n"+e);
           }
+        }
       }
     </script>
   </body>
