@@ -1,0 +1,29 @@
+.btn {
+    padding: 50px;
+    width: 70vw;
+    font-size: 55px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    margin: 50px 0;
+    border-radius: 5%;
+    user-select: none;
+    background-color: #fff;
+    transition: 1s;
+}
+.btn:hover {
+    background-color: #ccc;
+}
+.centre {
+    display: flex;
+    justify-content: center;
+}
+.title {
+    margin: 20px 0;
+    font-family: sans-serif;
+    font-size: 77px;
+}
+body {
+    background-color: #eee;
+}
