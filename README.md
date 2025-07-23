@@ -1,2 +1,4 @@
 # Spuddlyhubber.github.io
-"Making some cool stuff... like Wordle Extreme."
+Made some cool stuff.
+Like Wordle Extreme and a Random Name Generator.
+More cool stuff coming soon! :D
