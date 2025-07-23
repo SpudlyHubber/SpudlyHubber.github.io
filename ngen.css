@@ -1,0 +1,31 @@
+.title {
+    font-size: 50px;
+    user-select: none;
+}
+.centre {
+    display: flex;
+    justify-content: center;
+}
+.margin {
+    margin: 100px 0;
+}
+.btn {
+    width: 225px;
+    height: 70px;
+    font-size: 35px;
+    border-radius: 15%;
+}
+.text {
+    font-size: 50px;
+}
+.smalltext {
+    font-size: 22px;
+    font-style: italic;
+}
+body {
+    margin: 0;
+    background-color: aqua;
+}
+input {
+    display: inline;
+}
