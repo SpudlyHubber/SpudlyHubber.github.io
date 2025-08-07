@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Image Filters
+    </title>
+    <link rel="stylesheet" href="img.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="centre">Input Image Link</div>
+    <input type="text" id="url" value="">
+    <div>
+        <input type="button" value="Add Filters" onclick="toggle()" id="addf">
+        <input type="button" value="Remove All Filters" onclick="removeFilters()" id="addf">
+        <input type="button" value="Red:Blue" onclick="setFilter('red:blue')">
+        <input type="button" value="Red:Green" onclick="setFilter('red:green')">
+        <input type="button" value="Green:Blue" onclick="setFilter('green:blue')">
+        <input type="button" value="ghost" onclick="setFilter('ghost')">
+        <input type="button" value="half-invert" onclick="setFilter('half-invert')">
+        <input type="button" value="invert" onclick="setFilter('invert')">
+        <input type="button" value="greyscale" onclick="setFilter('greyscale')">
+    </div>
+    <script src="img.js"></script>
+</body>
+</html>
