@@ -42,6 +42,12 @@ const effects = {
                 data[i + 1] = avg;
                 data[i + 2] = avg;
             }
+            if(filter.includes("sepia")) {
+                let avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
+                data[i] = 165 / 255 * avg;
+                data[i + 1] = 42 / 255 * avg;
+                data[i + 2] = 42 / 255 * avg;
+            }
         }
         cb.width = img.width;
         cb.height = img.height;
@@ -91,4 +97,5 @@ function downloadCanvas() {
 }
 img.addEventListener("load", () => {
     setInterval(loop, 1000);
+});
 });
