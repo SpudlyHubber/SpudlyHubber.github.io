@@ -95,7 +95,8 @@ function downloadCanvas() {
         link.click();
     });
 }
-img.addEventListener("load", () => {
+addEventListener("load", () => {
     setInterval(loop, 1000);
 });
+
 
