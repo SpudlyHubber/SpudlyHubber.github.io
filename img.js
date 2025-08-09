@@ -98,4 +98,4 @@ function downloadCanvas() {
 img.addEventListener("load", () => {
     setInterval(loop, 1000);
 });
-});
+
