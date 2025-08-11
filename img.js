@@ -104,5 +104,6 @@ bright.oninput = function() {
     nfilter[0] = parseInt(bright.value);
 }
 addEventListener("DOMContentLoaded", () => {
-    setInterval(loop, 3000);
+    setInterval(loop, 1000);
+
 });
