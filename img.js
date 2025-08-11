@@ -105,5 +105,5 @@ bright.oninput = function() {
 }
 addEventListener("DOMContentLoaded", () => {
     setInterval(loop, 1000);
-
 });
+
