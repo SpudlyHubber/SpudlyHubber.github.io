@@ -1,4 +1,4 @@
 # Spuddlyhubber.github.io
 Made some cool stuff.
-Like Wordle Extreme and a Random Name Generator.
+Including Wordle Extreme, Random Name Generator, and Image Filters.
 More cool stuff coming soon! :D
