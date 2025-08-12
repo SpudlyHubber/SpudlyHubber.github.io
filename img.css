@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #eef;
+}
+canvas {
+    background-color: #ffffff;
+}
+input, .centre {
+    display: flex;
+    justify-self: center;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#bright, #shade {
+    width: 350px;
+}
