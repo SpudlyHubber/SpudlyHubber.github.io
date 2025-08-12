@@ -45,9 +45,9 @@ const effects = {
             }
             if(filter.includes("sepia")) {
                 let avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
-                data[i] = 165 / 255 * avg;
-                data[i + 1] = 42 / 255 * avg;
-                data[i + 2] = 42 / 255 * avg;
+                data[i] = 112 / 255 * avg;
+                data[i + 1] = 66 / 255 * avg;
+                data[i + 2] = 20 / 255 * avg;
             }
             data[i] += nfilter[0] * 2.55;
             data[i + 1] += nfilter[0] * 2.55;
@@ -106,5 +106,6 @@ bright.oninput = function() {
 addEventListener("DOMContentLoaded", () => {
     setInterval(loop, 1000);
 });
+
 
 
