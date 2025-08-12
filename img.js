@@ -52,11 +52,11 @@ const effects = {
             data[i] += nfilter[0] * 2.55;
             data[i + 1] += nfilter[0] * 2.55;
             data[i + 2] += nfilter[0] * 2.55;
+        }
         cb.width = img.width;
         cb.height = img.height;
         ctx.putImageData(imageData, 0, 0);
         ctxb.putImageData(imageData, 0, 0);
-        }
     }
 }
 function loop() {
@@ -106,4 +106,5 @@ bright.oninput = function() {
 addEventListener("DOMContentLoaded", () => {
     setInterval(loop, 1000);
 });
+
 
