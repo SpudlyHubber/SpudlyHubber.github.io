@@ -1,0 +1,21 @@
+var textv = [
+    "Salve!",
+    "Batteries not included.",
+    "[insert joke]",
+    "No added attached strings!",
+    "Also try rpicpu.dev!",
+    "undefined",
+    "Free coffee! ...is not real. :(",
+    "Buy £1 coins for £1!",
+    "Achievement get!",
+    "It's miss-chuh-vuss, not miss-chee-vee-ous!",
+    "But why DID the chicken cross the road?",
+    "Read all about it!",
+    "Yeah, no, it's AITCH, not HAITCH.",
+    "Practice makes perfect!",
+    "Take your age. Double it. Halve that number. That's your age.",
+    "Red leather, yellow leather, redth yeather, lello ether!",
+    "I is for aisle!",
+    "Stop procrastinating and do important work like procrastinating.",   
+];
+text.innerHTML = textv[Math.round(Math.random() * (textv.length - 1))];
