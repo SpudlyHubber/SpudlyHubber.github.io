@@ -171,7 +171,7 @@ function loop() {
         playerscore.style.background = "#F0B502";
     }
     if(localStorage.wordlePoints > 1500) {
-        level.innerHTML = "7 - Rex Totius Wordilae";
+        level.innerHTML = "7 - Master Of Wordle";
         playerscore.style.background = "#000 url(RANK-7.jpg)";
         playerscore.style.backgroundRepeat = "no-repeat";
         playerscore.style.backgroundPosition = "center";
@@ -195,3 +195,4 @@ function loop() {
 }
 loop();
 });
+
