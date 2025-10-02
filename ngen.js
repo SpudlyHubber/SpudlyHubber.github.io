@@ -5,7 +5,9 @@ let consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'k', 'l',
 let vpairs = ['ee', 'oo', 'ea', 'ou', 'oi', 'io', 'au'];
 let cpairs = ['th', 'ch', 'sh', 'tr', 'st', 'lt', 'ck', 'pl', 'sl', 'fr', 'bl', 'br'];
 let titles = [' the Creator', ' the Destroyer', ' the Scholar', ' the Warrior', ' the Ruler', ' the Overlord',
-    ' the Merciful', ' the Merciless', ' the Gentle', ' the Powerful', ' the Cunning', ' the Great'];
+    ' the Merciful', ' the Merciless', ' the Gentle', ' the Powerful', ' the Cunning', ' the Great', ' the Creative', ' the Nerdy',
+             ' the Commander', ' the King', ' the Emperor', ' the Wise', 'the Guru', 'the Grandfather', 'the Father', 'the Mother', ' the Egg',
+             ' the First', ' the Second', ' the Third', ' the Fourth', ' the Fifth', ' the Holy', ' the Sinner', ' the Holy', ' the CEO'];
 const capitalize = function(n) {
     return n[0].toUpperCase() + n.slice(1, n.length);
 }
@@ -84,4 +86,5 @@ function createTitle(name) {
 }
 function gen() {
     text.innerHTML = createTitle(genname());
+
 }
