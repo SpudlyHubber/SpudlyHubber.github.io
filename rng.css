@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+body {
+    overflow-x: hidden;
+}
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    width: 300px;
+    height: 100px;
+    font-size: 33px;
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 7%;
+}
+.rarity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+body {
+    margin: 0;
+}
+.celestial {
+    background: linear-gradient(to top, #0000ff, #00ffff);
+}
+.moon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: gray;
+    box-shadow: 0 0 20px 10px gray;
+    position: absolute;
+    left: 43%;
+    z-index: 0;
+}
+.tilt-right {
+    transform: perspective(500px) rotateY(45deg);
+    padding-right: 150px;
+}
+.tilt-left {
+    transform: perspective(500px) rotateY(-45deg);
+    padding-left: 100px;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
