@@ -45,7 +45,7 @@ addRarity("Stellar", [], 0.010001, ["Stellar"]); // 0.010001
 addRarity("Corrupted", [], 0.009, ["Corrupted"]) // 0.009
 addRarity("Singularity", [], 0.0067, ["Singularity"]) // 0.0067
 addRarity("null", [], 0.0023001, ["Null"]) // 0.0023001
-addRarity("Zodiac", [], 1001, ["Zodiac"], ["Wheel", "BGShift"]) // 0.001
+addRarity("Zodiac", [], 0.001, ["Zodiac"], ["Wheel", "BGShift"]) // 0.001
 addRarity("Nihility", [], 0.0000001, ["Nihility"]); // 0.0000001
 var currentRarity;
 var totChance = 0;
